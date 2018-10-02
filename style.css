@@ -26,6 +26,7 @@ body{
 .navegador div{
     background: #000000;
     position: relative;
+    padding: 0.3em;
     top: 1.5em;
     -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
@@ -38,8 +39,26 @@ body{
 
 /****** diseño inicio ********************************/
 .inicio{
-    background-color: #000000;
-    opacity: 0.4;
+    width: 100%;
+    height: 30em;
+    padding: 3em;
+}
+.inicio *{
+    color: white;
+}
+.inicio p:nth-child(1){
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Monoton', cursive;
+}
+.inicio p:nth-child(2){
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Raleway', sans-serif;
+}
+.inicio p:nth-child(3){
+    text-align: center;
+    font-size: 6em;
 }
 
 
@@ -54,7 +73,7 @@ body{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    padding: 2em;
+    padding: 0 2em;
     background-color: white;
     margin: 0.3em;
     border-radius: 10px;
@@ -101,15 +120,35 @@ body{
 
 /*diseño form*/
 .form{
+    background-image: url(img/contacus.jpg);
+    background-size: 100% 60em;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .formulario{
     grid-column: 1/2;
 }
+.formulario *{
+    justify-content: center;
+    margin: 0 auto;
+
+}
 .formulario label{
     color: white;
 }
 .info{
     grid-column: 2/3;
+    position: relative;
+}
+.info h3,.info p{
+    z-index: 1;
+    color: white;
+}
+.polarize{
+    background-color: #000000;
+    opacity: 0.4;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
 }
